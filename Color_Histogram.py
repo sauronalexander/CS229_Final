@@ -18,5 +18,6 @@ for i in range(0, 500):
             b = int(b/(256/box_dim))
             index = r+g*box_dim+b*box_dim*box_dim
             hist[index] += 1
+    print(i)
 
-numpy.savetxt("./data/histogram.csv", a, delimiter=",")
+np.savetxt("./data/histogram.csv", hist, delimiter=",")
